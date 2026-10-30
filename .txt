@@ -1,0 +1,4 @@
+Ultimo ID ESPE:6
+Fecha de tu variante, de 08:00 a 10:00 y de 10:00 a 12:00 (UTC), 
+ el usuario USER del seed eres tú (tu nombre y tu correo institucional). 
+ En tu .env, PORT=3026
