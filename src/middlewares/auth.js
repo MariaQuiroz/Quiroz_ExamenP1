@@ -11,5 +11,13 @@ function authenticateToken(req, res, next) {
     next();
   });
 }
+function isAdmin(req, res, next) {
+  if (!req.user || req.user.role !== "ADMIN") {
+    return res.status(403).json({ error: "Access denied. Admin role required" });
+  }
+  next();
+}
+
+module.exports = { authenticateToken: authenticateTokenExported, isAdmin }; 
 
 module.exports = authenticateToken;
